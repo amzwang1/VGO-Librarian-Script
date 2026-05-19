@@ -1,5 +1,7 @@
 # librarian
 
+NOTE: All credit for this script goes to Justin Yu (fractal161). I only made a few minor edits to it to make it more functional.
+
 The [MIT Video Game Orchestra](https://www.youtube.com/@mitvgo/) performs a large amount of music every semester, which is rehearsed weekly. The arrangements themselves are a core part of the process, as they are frequently modified based on feedback from rehearsals. As a result, updated arrangements must be printed and arranged into binders every week. When done manually, this takes considerable effort (citation: I have done this).
 
 This repository streamlines process by automatically organizing and combining each part into their appropriate binder, batching the outputs for easy printing.
@@ -18,7 +20,7 @@ This project is written entirely in [Python](https://www.python.org/), which mus
 
 Once the initial arrangements have been uploaded to SharePoint, run `python librarian.py init` and follow the prompts. The most intensive part of this process is in making the regexes to extract instruments from file names (you can use [https://regex101.com/] for testing).
 
-The results can be found inside the `library/` folder. The last step is manually filling out the `binders.csv` file (which can be opened using e.g. Excel, or directly copied from and external Google Sheet). Make sure that the instrument names you fill out for each box in binders.csv matches the instrument part name in the arrangement (ex. If The Tomorrow With You's Clarinet 1 part is called "Clarinet_in_Bb_1", make sure that's what you enter into the corresponding box in binders.csv.
+The results can be found inside the `library/` folder. The last step is manually filling out the `binders.csv` file (which can be opened using e.g. Excel, or directly copied from and external Google Sheet). Make sure that the instrument names you fill out for each box in binders.csv matches the instrument part name in the arrangement (ex. If The Tomorrow With You's Clarinet 1 part is called "Clarinet_in_Bb_1", make sure that's what you enter into the corresponding box in binders.csv).
 
 ### Weekly usage
 
